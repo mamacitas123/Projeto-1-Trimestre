@@ -1,26 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="pt-br">
+
+
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto de Vida</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <title>Meus objetivos do ano</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <header>
-        <h1>Meu Projeto de Vida</h1>
-    </header>
-    <section id="goals">
-        <h2>Meus Objetivos</h2>
-        <ul id="goal-list">
-            <!-- Aqui serão adicionados os objetivos dinamicamente com JavaScript -->
-        </ul>
-        <input type="text" id="goal-input" placeholder="Digite seu objetivo">
-        <button onclick="addGoal()">Adicionar Objetivo</button>
+
+    <section class="conteudo-principal">
+
+        <h2 class="titulo-principal">Meus Objetivos do ano<span>_</span></h2>
+
+        <div class="conteudo">
+
+            <div class="botoes">
+
+                <button class="botao ativo">Objetivo 1</button>
+
+                <button class="botao">Objetivo 2</button>
+
+                <button class="botao">Objetivo 3</button>
+
+                <button class="botao">Objetivo 4</button>
+
+            </div>
+
+            <div class="abas-textos">
+
+                <div class="aba-conteudo ativo">
+
+                    <h3 class="aba-conteudo-titulo-principal">Me formar no ensino médio</h3>
+
+                    <h4 class="aba-conteudo-titulo-principal2">Dificuldade:</h4>
+
+                    <h4 class="contador-digito-numero2">6/10</h4>
+
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo estimado para completar o objetivo</h4>
+
+                    <div class="contador">
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="dias0"></p>
+
+                            <p class="contador-digito-texto">dias</p>
+
+                        </div>
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="horas0"></p>
+
+                            <p class="contador-digito-texto">horas</p>
+
+                        </div>
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="min0"></p>
+
+                            <p class="contador-digito-texto">min</p>
+
+                        </div>
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="seg0"></p>
+
+                            <p class="contador-digito-texto">seg</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="aba-conteudo">
+
+                    <h3 class="aba-conteudo-titulo-principal">Passar no ENEM ou VESTIBULAR</h3>
+
+                    <h4 class="aba-conteudo-titulo-principal2">Dificuldade:</h4>
+
+                    <h4 class="contador-digito-numero3">8/10</h4>
+
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo estimado para completar o objetivo</h4>
+
+                    <div class="contador">
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="dias1"></p>
+
+                            <p class="contador-digito-texto">dias</p>
+
+                        </div>
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="horas1"></p>
+
+                            <p class="contador-digito-texto">horas</p>
+
+                        </div>
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="min1"></p>
+
+                            <p class="contador-digito-texto">min</p>
+
+                        </div>
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="seg1"></p>
+
+                            <p class="contador-digito-texto">seg</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="aba-conteudo">
+
+                    <h3 class="aba-conteudo-titulo-principal">Evoluir dentro do meu local de trabalho</h3>
+
+                    <h4 class="aba-conteudo-titulo-principal2">Dificuldade:</h4>
+
+                    <h4 class="contador-digito-numero4">5/10</h4>
+
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo estimado para completar o objetivo</h4>
+
+                    <div class="contador">
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="dias2"></p>
+
+                            <p class="contador-digito-texto">dias</p>
+
+                        </div>
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="horas2"></p>
+
+                            <p class="contador-digito-texto">horas</p>
+
+                        </div>
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="min2"></p>
+
+                            <p class="contador-digito-texto">min</p>
+
+                        </div>
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="seg2"></p>
+
+                            <p class="contador-digito-texto">seg</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="aba-conteudo">
+
+                    <h3 class="aba-conteudo-titulo-principal">Entrar na faculdade(engenharia civil)</h3>
+
+                    <h4 class="aba-conteudo-titulo-principal2">Dificuldade:</h4>
+
+                    <h4 class="contador-digito-numero5">9/10</h4>
+
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo estimado para completar o objetivo</h4>
+
+                    <div class="contador">
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="dias3"></p>
+
+                            <p class="contador-digito-texto">dias</p>
+
+                        </div>
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="horas3"></p>
+
+                            <p class="contador-digito-texto">horas</p>
+
+                        </div>
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="min3"></p>
+
+                            <p class="contador-digito-texto">min</p>
+
+                        </div>
+
+                        <div class="contador-digito">
+
+                            <p class="contador-digito-numero" id="seg3"></p>
+
+                            <p class="contador-digito-texto">seg</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
-    <footer>
-        <p>&copy; 2024 Meu Projeto de Vida</p>
-    </footer>
-    <script src="script.js"></script>
+
+    <script src="main.js"></script>
+
 </body>
-</html>
+
+
+
+                                </html>
